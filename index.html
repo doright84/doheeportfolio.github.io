@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon2.png">
+    <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>김도희's 포트폴리오</title>
+
+    <!-- Script -->
+    <script src="js/jquery.min.js"></script>
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/respond.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="js/progressbar/progressbar.js"></script>
+    <!-- // Script -->
+
+    <link href="js/aos/aos.css" rel="stylesheet">
+    <script src="js/aos/aos.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- // Style -->
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-box">
+            <div class="modal-cont-1">
+                <img class="modal-c modal-cont-prince" src="images/modal_cont1.png" alt="어린왕자" data-aos="fade-right"
+                    data-aos-duration="800">
+                <img class="modal-c modal-cont-paper" src="images/modal_cont2.png" alt="어린왕자" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="800">
+                <img class="modal-c modal-cont-talk" src="images/modal_cont3.png" alt="어린왕자" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="1600">
+                <button class="modal-c modal-next">
+                    <img src="images/modal_next.png" alt="다음버튼">
+                </button>
+            </div>
+            <div class="modal-cont-2">
+                <img class="modal-cont-talk2" src="images/modal_cont4.png" alt="어린왕자">
+                <img class="modal-cont-bg3" src="images/modal_cont5.png" alt="어린왕자">
+            
+                <button class="modal-c modal-close">
+                    <img src="images/modal_close.png" alt="다음버튼">
+                </button>
+            </div>
+            <button>
+                <img class="modal-close" src="images/close_bt.png" alt="닫기버튼">
+            </button>
+        </div>
+    </div>
+    <!-- fix wrap -->
+    <a href="#" class="logo"></a>
+    <button class="fix-menu-bt"></button>
+    <div class="fix-wrap">
+        <span class="fix-bg"></span>
+        <ul class="fix-gnb-menu">
+            <li><a href="#profile" class="fix-menu menu-move">Profile</a></li>
+            <li><a href="#publishing" class="fix-menu menu-move">Publishing</a></li>
+            <li><a href="#design" class="fix-menu menu-move">Design</a></li>
+            <li><a href="#life" class="fix-menu menu-move">life</a></li>
+            <li><a href="#contact" class="fix-menu menu-move">Contact</a></li>
+            <li><a href="asset/kimdohee_resume.pdf" class="fixmenu-etc">+ Resume Down</a></li>
+            <li><a href="https://doright84.github.io/portfoliowebprocess.github.io/" target="_blank"
+                    class="fixmenu-etc">+ Process</a></li>
+        </ul>
+    </div>
+    <!-- //fix wrap// -->
+    <div class="wrap">
+        <!-- header -->
+        <section class="header">
+            <div class="head-container">
+                <div class="gnb">
+                    <ul class="menu clearfix">
+                        <li><a href="#profile" class="menu-list">Profile</a></li>
+                        <li><a href="#publishing" class="menu-list">Publishing</a></li>
+                        <li><a href="#design" class="menu-list">Design</a></li>
+                        <li><a href="#life" class="menu-list">Life</a></li>
+                        <li><a href="#contact" class="menu-list">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="head-cont">
+                    <div class="head-txt">
+                        <div class="head-cont-left">
+                            <h2 class="head-title">Who Am I?</h2>
+                            <p>KIM DO HEE's</p>
+                        </div>
+                        <div class="head-cont-right">
+                            <p>2022</p>
+                            <h2 class="head-title">PORTFOLIO</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container head-sw-cont">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#profile" class="head-swiper-img head-sw-img-pro"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#publishing" class="head-swiper-img head-sw-img-publ"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#design" class="head-swiper-img head-sw-img-design"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#life" class="head-swiper-img head-sw-img-life"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#contact" class="head-swiper-img head-sw-img-cont"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //header// -->
+        <!-- profile -->
+        <section class="profile" id="profile">
+            <div class="profile-img" alt="프로필사진"> </div>
+            <div class="profile-right-bg"></div>
+            <p class="index profile-index">Profile</p>
+            <div class="container clearfix">
+                <div class="profile-left" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                    <h2 class="index-title pro-index">About Me.</h2>
+                    <p class="profile-left-txt">무엇을 <b>상상</b>하던<br>
+                        <b>가능성</b>을 보여드릴께요!</p>
+                </div>
+                <div class="profile-right clearfix" data-aos="fade-left" data-aos-offset="500"
+                    data-aos-easing="ease-in-sine">
+                    <div class="profile-right-cont">
+                        <div class="profile-right-title"></div>
+                        <p class="profile-r-title-impact">Do Hee Kim</p>
+                        <p class="profile-r-text">
+                            저에 대해 한계점을 두지 않고 <b>도전</b>하는 것을 좋아합니다.<br>
+                            좋아하는 일로 시작하여 잘하는 일로 끝날 수 있게<br>
+                            매일 <b>노력</b>하고 끝없이 <b>성장</b>하는<br>
+                            <br>
+                            <b>긍정적인 웹 퍼블리셔, 김도희입니다 :)</b>
+                        </p>
+                    </div>
+                    <button class="profile-bt"></button>
+                </div>
+            </div>
+        </section>
+        <!-- //profile// -->
+        <!-- viewmore -->
+        <div class="viewmore" id="viewmore">
+            <div class="container">
+                <h2 class="index-title viewmore-index">Resume.</h2>
+                <div class="viewmore-wrap clearfix">
+                    <div class="view-top-cont clearfix">
+                        <span class="view-top-img"></span>
+                        <div class="view-top-txt">
+                            <p>항상 열려있는 사람!</p>
+                            <h3><b>김도희</b> 입니다!</h3>
+                        </div>
+                    </div>
+                    <div class="viewmore-left">
+                        <div class="view-left-profile">
+                            <p><img src="images/v_profile.png" alt="프로필 아이콘"> 1998.08.04 ( 25세 )</p>
+                            <p><img src="images/v_email.png" alt="이메일 아이콘"><a href="mailto:doright_84@naver.com">
+                                    doright_84@naver.com</a></p>
+                            <p><img src="images/v_kakao.png" alt="카카오 아이콘"> <a href="https://open.kakao.com/me/do_right"
+                                    target="_blank"> doright_84</a></p>
+
+                            <a class="down-resume" href="asset/kimdohee_resume.pdf" Download data-aos="fade-right"
+                                data-aos-duration="800">Resume
+                                <img src="images/v_download.png" alt="다운로드 이미지">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="viewmore-right">
+                        <div class="view-right-index" data-aos="fade-up" data-aos-duration="800"></div>
+                        <div class="view-right-cont" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                            <ul class="view-right-list">
+                                <li>
+                                    <p class="v-right-index-txt">학력사항</p>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">광영고등학교</p>
+                                        <p class="view-date">~ 2017.02</p>
+                                    </div>
+                                    <p class="view-r-explain">인문계열</p>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">영남이공대학교</p>
+                                        <p class="view-date">~ 2019.02</p>
+                                    </div>
+                                    <p class="view-r-explain">시각디자인과</p>
+                                </li>
+                            </ul>
+                            <ul class="view-right-list">
+                                <li>
+                                    <p class="v-right-index-txt">경력사항</p>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">다울협동조합</p>
+                                        <p class="view-date">2020.03 ~ 2021.03</p>
+                                    </div>
+                                    <p class="view-r-explain">디자인부서 | 사원</p>
+                                </li>
+                            </ul>
+                            <ul class="view-right-list">
+                                <li>
+                                    <p class="v-right-index-txt">대외활동</p>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">코나비옵티칼</p>
+                                        <p class="view-date">2019.11 ~ 2020.02</p>
+                                    </div>
+                                    <p class="view-r-explain">디자인부서 | 인턴</p>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">그린컴퓨터 아트학원</p>
+                                        <p class="view-date">2021.06 ~ 2021.12</p>
+                                    </div>
+                                    <p class="view-r-explain">디지털컨버전스 - 플럽드러닝 [PWA]</p>
+                                </li>
+                            </ul>
+                            <ul class="view-right-list">
+                                <li>
+                                    <p class="v-right-index-txt">자격증 /<br>수상내역</p>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">GTQ 1급</p>
+                                        <p class="view-date">2019.05</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">GTQ-i 1급</p>
+                                        <p class="view-date">2019.08</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">시각디자인산업기사</p>
+                                        <p class="view-date">2020.06</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">웹디자인기능사</p>
+                                        <p class="view-date">2021.11</p>
+                                    </div>
+                                    <p class="view-r-explain">필기 합격</p>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">컬러리스트산업기사</p>
+                                        <p class="view-date">2020.09</p>
+                                    </div>
+                                    <p class="view-r-explain">필기 합격</p>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">2종보통운전면허</p>
+                                        <p class="view-date">2016.12</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="view-r-tit">
+                                        <p class="view-r-txt">경북캐릭터 공모전 입상</p>
+                                        <p class="view-date">2018.09</p>
+                                    </div>
+                                    <p class="view-r-explain">특선</p>
+                                </li>
+                            </ul>
+                            <ul class="view-right-list view-program clearfix">
+                                <li>
+                                    <p class="v-right-index-txt">기술사항</p>
+                                    <div class="v-program-wrap">
+                                        <span class="program program-1"></span>
+                                        <p class="program-txt">Html</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="v-program-wrap">
+                                        <span class="program program-2"></span>
+                                        <p class="program-txt">Css</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="v-program-wrap">
+                                        <span class="program program-3"></span>
+                                        <p class="program-txt">JQuery</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="v-program-wrap">
+                                        <span class="program program-4"></span>
+                                        <p class="program-txt">Photoshop</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="v-program-wrap">
+                                        <span class="program program-5"></span>
+                                        <p class="program-txt">Illustrator</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //viewmore// -->
+        <!-- skill -->
+        <section class="skill">
+            <div class="container">
+                <h2 class="index-title">Skill.</h2>
+                <p class="index-txt">이만큼 할 수 있어요!</p>
+                <div class="skill-wrap">
+                    <ul data-aos="fade-up" data-aos-duration="800">
+                        <li class="skill-cont">
+                            <h3>Html</h3>
+                            <div id="html" class="progress"></div>
+                            <p>Html의 기본 구조를 이해하고 웹 표준을 고려하여 마크업 작성이 가능합니다.</p>
+                        </li>
+                        <li class="skill-cont">
+                            <h3>PhotoShop</h3>
+                            <div id="photo" class="progress"></div>
+                            <p>여러가지 툴을 사용하여 다양한 효과와 웹 사이트 디자인이 가능합니다.</p>
+                        </li>
+                    </ul>
+                    <ul data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <li class="skill-cont">
+                            <h3>CSS</h3>
+                            <div id="css" class="progress"></div>
+                            <p> CSS의 기본 구조와 속성을 이해하며 외부 스타일 시트를 이용해 다양한 구조와 스타일, 코드 구현이 가능합니다</p>
+                        </li>
+                        <li class="skill-cont">
+                            <h3>Illustrator</h3>
+                            <div id="illu" class="progress"></div>
+                            <p>모든 툴 사용에 능숙하고 프로그램을 사용하여 그림 그리기 및 디자인이 가능합니다.</p>
+                        </li>
+                    </ul>
+                    <ul data-aos="fade-up" data-aos-duration="800">
+                        <li class="skill-cont">
+                            <h3>JQuery</h3>
+                            <div id="jquery" class="progress"></div>
+                            <p>jQuery의 기본 구조를 이해하며 활용할 수 있습니다. 선택자, 오픈소스 활용이 가능합니다</p>
+                        </li>
+                        <li class="skill-cont">
+                            <h3>SketchUp / AfterEffect</h3>
+                            <div id="sketch_af" class="progress"></div>
+                            <p><b>SketchUp</b> - 간단한 건물 제작 가능합니다<br><b>After Effect</b> - 핀을 이용하여 움직임효과와 시간 편집이 가능합니다.
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <!-- //skill// -->
+        <!-- publishing -->
+        <section class="publishing" id="publishing">
+            <p class="index publ-index">Publishing</p>
+            <div class="publ-bg-img"></div>
+            <div class="container">
+                <h2 class="index-title">Publishing.</h2>
+                <p class="index-txt">Html의 구조를 파악하고 CSS로 세심히 구상하여 만들었어요!</p>
+                <div class="publ-cont-wrap">
+                    <div class="publ-cont-w-left" data-aos="fade-right" data-aos-offset="500"
+                        data-aos-easing="ease-in-sine">
+                        <div class="publ-cont-item">
+                            <h3>삼양맛샵</h3>
+                            <ul>
+                                <li><b>Publishing</b></li>
+                                <li>제작기간 : 2021.11 (2주 소요)</li>
+                                <li>개인 참여도 : 100%</li>
+                                <li>사용 프로그램 : Html / css / jQuery</li>
+                                <li class="publ-left-cont">
+                                    <a href="https://sydeliciousshop.com/" target="_blank"
+                                        class="publ-cont-bt">Original</a>
+                                    <a href="https://doright84.github.io/samyang.github.io/" target="_blank"
+                                        class="publ-cont-bt">Publishing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="publ-cont-item">
+                            <h3>풀무원 녹즙</h3>
+                            <ul>
+                                <li><b>Publishing</b></li>
+                                <li>제작기간 : 2021.11 (1주 소요)</li>
+                                <li>개인 참여도 : 100%</li>
+                                <li>사용 프로그램 : Html / css / jQuery</li>
+                                <li class="publ-left-cont">
+                                    <a href="https://greenjuice.pulmuone.com/" target="_blank"
+                                        class="publ-cont-bt">Original</a>
+                                    <a href="https://doright84.github.io/pulmuwon.github.io/" target="_blank"
+                                        class="publ-cont-bt">Publishing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="publ-cont-item">
+                            <h3>노란우산</h3>
+                            <ul>
+                                <li><b>Publishing</b></li>
+                                <li>제작기간 : 2021.12 (3일소요)</li>
+                                <li>개인 참여도 : 100%</li>
+                                <li>사용 프로그램 : Html / css / jQuery</li>
+                                <li class="publ-left-cont">
+                                    <a href="https://www.8899.or.kr/yuma/index.do" target="_blank"
+                                        class="publ-cont-bt">Original</a>
+                                    <a href="https://doright84.github.io/noran.github.io/" target="_blank"
+                                        class="publ-cont-bt">Publishing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="publ-cont-item">
+                            <h3>Billy Angel</h3>
+                            <ul>
+                                <li><b>Redesign + Publishing</b></li>
+                                <li>제작기간 : 2021.12 (2주소요)</li>
+                                <li>개인 참여도 : 100%</li>
+                                <li>사용 프로그램 : Html / css / jQuery /<br> PhotoShop / Illustrator</li>
+                                <li><br><b>직접 리디자인하여 제작한 사이트 입니다.</b></li>
+                                <li class="publ-left-cont">
+                                    <a href="https://billyangelshop.com/" target="_blank"
+                                        class="publ-cont-bt">Original</a>
+                                    <a href=" https://doright84.github.io/billyangel.github.io/" target="_blank"
+                                        class="publ-cont-bt">Publishing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="publ-cont-item">
+                            <h3>동백 여행사</h3>
+                            <ul>
+                                <li><b>Redesign + Publishing</b></li>
+                                <li>제작기간 : 2021.12 (2주소요)</li>
+                                <li>개인 참여도 : 100%</li>
+                                <li>사용 프로그램 : Html / css / jQuery /<br> PhotoShop / Illustrator</li>
+                                <li><br><b>직접 리디자인하여 제작한 사이트 입니다.</b></li>
+                                <li class="publ-left-cont">
+                                    <a href="https://www.dongbaektour.com/main" target="_blank"
+                                        class="publ-cont-bt">Original</a>
+                                    <a href=" https://doright84.github.io/dongbaek.github.io/" target="_blank"
+                                        class="publ-cont-bt">Publishing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="publ-navigation clearfix">
+                            <div class="publ-navi-bt publ-prev"></div>
+                            <div class="publ-navi-bt publ-next"></div>
+                        </div>
+                    </div>
+                    <div class="publ-cont-w-right" data-aos="fade-left" data-aos-offset="500"
+                        data-aos-easing="ease-in-sine">
+                        <div class="swiper-container publ-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class=" publ-sw-sl publ-sl-img1">
+                                    </div>
+                                    <span class="publ-img-hover">
+                                        <div class="publ-img-hover-cont">
+                                            <span></span>
+                                            <h3>01. 삼양맛샵</h3>
+                                            <h4>Publishing</h4>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publ-sw-sl publ-sl-img2">
+                                    </div>
+                                    <span class="publ-img-hover">
+                                        <div class="publ-img-hover-cont">
+                                            <span></span>
+                                            <h3>02. 풀무원 녹즙</h3>
+                                            <h4>Publishing</h4>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publ-sw-sl publ-sl-img3"></div>
+                                    <span class="publ-img-hover">
+                                        <div class="publ-img-hover-cont">
+                                            <span></span>
+                                            <h3>03. 노란 우산</h3>
+                                            <h4>Publishing</h4>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publ-sw-sl publ-sl-img4"></div>
+                                    <span class="publ-img-hover">
+                                        <div class="publ-img-hover-cont">
+                                            <span></span>
+                                            <h3>04. Billy Angel</h3>
+                                            <h4>Redesign / Publishing</h4>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publ-sw-sl publ-sl-img5"></div>
+                                    <span class="publ-img-hover">
+                                        <div class="publ-img-hover-cont">
+                                            <span></span>
+                                            <h3>05. 동백여행사</h3>
+                                            <h4>Redesign / Publishing</h4>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //publishing// -->
+        <!-- design-->
+        <section class="design" id="design">
+            <p class="index">Design</p>
+            <div class="container">
+                <h2 class="index-title">Design.</h2>
+                <p class="index-txt">다양한 컨셉의 웹 디자인을 준비해봤어요!</p>
+                <div class="design-pack">
+                    <ul class="design-box-pack" data-aos="fade-up" data-aos-duration="800">
+                        <li>
+                            <div class="design-box design-b-img1">
+                                <span class="design-box-cont">
+                                    <p>포트폴리오 디자인</p>
+                                    <span>
+                                        <a href="https://doright84.github.io/branding.github.io/" target="_blank"
+                                            class="design-bt">Branding</a>
+                                        <a href="https://doright84.github.io/portfoliowebprocess.github.io/"
+                                            target="_blank" class="design-bt">Web</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="design-box design-b-img2">
+                                <span class="design-box-cont">
+                                    <p>빌리엔젤 리디자인</p>
+                                    <span>
+                                        <a href="https://doright84.github.io/billyangel-brandprocess.github.io/"
+                                            target="_blank" class="design-bt">Branding</a>
+                                        <a href="https://doright84.github.io/billyangel-process.github.io/"
+                                            target="_blank" class="design-bt">Web</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="design-box design-b-img3">
+                                <span class="design-box-cont">
+                                    <p>동백 여행사 웹 리디자인</p>
+                                    <span>
+                                        <a href="https://doright84.github.io/dongbaekprocess.github.io/" target="_blank"
+                                            class="design-bt">View Process</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="design-box-pack" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <li>
+                            <div class="design-box design-b-img4">
+                                <span class="design-box-cont">
+                                    <p>도그워크 모바일 UX/UI</p>
+                                    <span>
+                                        <a href="https://doright84.github.io/dogwalk.github.io/" target="_blank"
+                                            class="design-bt">View Process</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="design-box design-b-img5">
+                                <span class="design-box-cont">
+                                    <p>영화 소울 이벤트 페이지</p>
+                                    <span>
+                                        <a href="https://doright84.github.io/souleventpage.github.io/" target="_blank"
+                                            class="design-bt">View Process</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="design-box design-b-img6">
+                                <span class="design-box-cont">
+                                    <p>Dr.Jart 이벤트 페이지</p>
+                                    <span>
+                                        <a href=" https://doright84.github.io/dr.jarteventpage.github.io/"
+                                            target="_blank" class="design-bt">View Process</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //design//-->
+        <!-- life -->
+        <section class="life" id="life">
+            <p class="index life-index">Life</p>
+            <div class="life-bg-img"></div>
+            <div class="container">
+                <h2 class="index-title">Life.</h2>
+                <p class="index-txt">하고 싶은 것도, 하는 것도 많은 저의 신나고 활기찬 경험 및 일상을 보여드릴께요!</p>
+                <div class="life-box-pack clearfix" data-aos="fade-up" data-aos-duration="500">
+                    <ul class="swiper-box">
+                        <li>
+                            <div class="swiper-container life-sw-container life-sw-1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img1">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">밝고 활기찬 사람이에요!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img2">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">사진을 찍는 것을 좋아해요!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img3">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">웃음이 많은 사람이에요!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img4">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">활동적인 활동을 좋아해요!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="life-navigation">
+                                    <div class="life-navi-bt life-prev"></div>
+                                    <div class="life-navi-bt life-next"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="swiper-container life-sw-container life-sw-2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img5">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">여행을 좋아해요!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img6">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">사교성이 많아 사람들과 잘 어울려요</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img7">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">영화보는 것을 좋아해요!</p>s
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img8">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">사실 사람 만나서 노는게 더 좋아요 :)</p>s
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="life-navigation">
+                                    <div class="life-navi-bt life-prev"></div>
+                                    <div class="life-navi-bt life-next"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="swiper-container life-sw-container life-sw-3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img13">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">경상북도 캐릭터 공모전 특선 입상했어요!</p>
+                                                <a class="life-a" href="https://doright84.github.io/hwadong.github.io/"
+                                                    target="_blank">See more!</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img9">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">버거킹 할로윈 공모전에 참여했어요!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img10">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">1도 인쇄 공모전에도 참여했어요!</p>
+                                                <a class="life-a" href="https://grafolio.naver.com/ddh0804"
+                                                    target="_blank">Go Grafolio!</a>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img11">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">핸드폰 케이스를 직접 디자인해서 좋았어요!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="life-left life-l-img12">
+                                            <span class="life-sw-cont">
+                                                <p class="life-sw-txt">직접 손으로 그림 그리는 것도 정말좋아해요!<br>@ a_doi0</p>
+                                                <a class="life-a" href="https://www.instagram.com/a_doi0/?hl=ko"
+                                                    target="_blank">Go Instagram!</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="life-navigation">
+                                    <div class="life-navi-bt life-prev"></div>
+                                    <div class="life-navi-bt life-next"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="life-right">
+                        <li class="life-r-li" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+                            <span class="life-r-img fl-le life-img1">
+                                <p class="life-r-txt">저는 화창하고 밝은 사람이에요</p>
+                                <p class="life-r-try ab-ri">오른쪽의 버튼을 눌러보세요!
+                                    <img src="images/l_right_arrow.png" alt="오른쪽 화살표">
+                                </p>
+                            </span>
+                            <button class="life-r-bt fl-ri">
+                                <i class="life-bt-img life-bt1"></i>
+                            </button>
+                        </li>
+                        <li class="life-r-li" data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
+                            <button class="life-r-bt fl-le">
+                                <i class="life-bt-img life-bt2"></i>
+                            </button>
+                            <span class="life-r-img fl-ri life-img2 clearfix">
+                                <p class="life-r-txt ab-ri">저는 활동적인 사람이에요</p>
+                                <p class="life-r-try ab-le">왼쪽의 버튼을 눌러보세요!
+                                    <img class="fl-le" src="images/l_left_arrow.png" alt="오른쪽 화살표">
+                                </p>
+                            </span>
+                        </li>
+                        <li class="life-r-li" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
+                            <span class="life-r-img fl-le life-img3">
+                                <p class="life-r-txt">저는 예술적인 사람이에요</p>
+                                <p class="life-r-try ab-ri">오른쪽의 버튼을 눌러보세요!
+                                    <img src="images/l_right_arrow.png" alt="오른쪽 화살표">
+                                </p>
+                            </span>
+                            <button class="life-r-bt fl-ri">
+                                <i class="life-bt-img life-bt3"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //life// -->
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <p class="index cont-index">Contact</p>
+            <div class="container">
+                <h2 class="index-title">Thank You.</h2>
+                <p class="cont-soon">Coming Soon!</p>
+                <ul class="cont-img-box">
+                    <li id="cont-img1" class="cont-img"></li>
+                    <li id="cont-img2" class="cont-img"></li>
+                    <li id="cont-img3" class="cont-img"></li>
+                </ul>
+                <p class="index-txt cont-index-txt">언제든지 연락해주세요. 항상 준비 되어있답니다 :)</p>
+            </div>
+            <div class="contact-footer">
+                <div class="contact-box clearfix" data-aos="fade-up" data-aos-duration="500">
+                    <ul class="contact-notice clearfix">
+                        <li>
+                            <a href="https://open.kakao.com/me/do_right" target="_blank">
+                                <i class="cont-f-icon f-icon-kakao"></i>
+                                <p class="cont-f-txt">Kakao-talk</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:doright_84@naver.com" target="_blank">
+                                <i class="cont-f-icon f-icon-email"></i>
+                                <p class="cont-f-txt">Email</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="asset/protfolio_img.pdf" Download>
+                                <i class="cont-f-icon f-icon-down"></i>
+                                <p class="cont-f-txt">Portfolio</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="asset/kimdohee_resume.pdf" Download>
+                                <i class="cont-f-icon f-icon-down"></i>
+                                <p class="cont-f-txt">Resume</p>
+                            </a>
+                        </li>
+                </div>
+                <p class="cont-f-reserve">2022 PORTFOLIO<br>Copyright 2022. 김도희. All right Reserved.</p>
+            </div>
+        </section>
+        <!-- //contact// -->
+    </div>
+</body>
+
+</html>
