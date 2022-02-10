@@ -430,6 +430,8 @@ body {
     top: 0;
     right: 0;
     display: block;
+    width: 58.5rem;
+    white-space: nowrap;
 }
 
 .menu li {
@@ -1151,7 +1153,7 @@ body {
 
 .publ-img-hover-cont>h3 {
     font-size: 2rem;
-    color: #333
+    color: rgb(27, 27, 27)
 }
 
 .swiper-slide-active>.publ-img-hover h3,
@@ -1169,7 +1171,7 @@ body {
     bottom: 0;
     font-size: 1.8rem;
     font-weight: 500;
-    color: #333
+    color: rgb(27, 27, 27) 
 }
 
 .publ-img-hover-cont>span {
