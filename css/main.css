@@ -265,9 +265,10 @@ body {
     transform: translate(-50%, -50%);
     display: none;
 }
+
 .modal-cont-talk2,
 .modal-cont-bg3,
-.modal-close{
+.modal-close {
     animation: fadein 2s;
     -moz-animation: fadein 2s;
     /* Firefox */
@@ -276,6 +277,7 @@ body {
     -o-animation: fadein 2s;
     /* Opera */
 }
+
 /* fix-wrap */
 
 .logo {
@@ -374,14 +376,21 @@ body {
 }
 
 .fixmenu-etc {
+   position: absolute;
+   top: 55rem;
+   height: 97rem;
+    left: 2rem;
     display: block;
+}
+
+.fixmenu-etc>a {
+    display: inline-block;
+    margin-right: 3rem;
     font-size: 2rem;
     color: #0c2e74;
-    margin: 55rem 2rem 0 0;
-    float: left;
     font-weight: 500;
     transition: font-weight 0.5s;
-}
+}z
 
 .fixmenu-etc:hover {
     font-weight: 600;
@@ -1171,7 +1180,7 @@ body {
     bottom: 0;
     font-size: 1.8rem;
     font-weight: 500;
-    color: rgb(27, 27, 27) 
+    color: rgb(27, 27, 27)
 }
 
 .publ-img-hover-cont>span {
